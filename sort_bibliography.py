@@ -3,6 +3,8 @@ import os
 
 
 home = os.path.expanduser("~") + "/"
+
+#TODO get file link from arguments
 main_tex_file = "%sDocuments/hiwi/funkeybox/00_documentation/2019-xx_FunkeyBox_Paper/Text/" % home
 
 # RegExp Pattern
