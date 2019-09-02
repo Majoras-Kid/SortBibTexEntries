@@ -2,7 +2,8 @@ import re
 import os
 
 
-home = "/home/florian/"
+home = os.path.expanduser("~") + "/"
+main_tex_file = "%sDocuments/hiwi/funkeybox/00_documentation/2019-xx_FunkeyBox_Paper/Text/" % home
 
 # RegExp Pattern
 input_pattern = "\\input\{(.)*.tex\}"
@@ -148,7 +149,7 @@ def create_new_bibtex():
     
     file.close()
 
-main_tex_folder = ("%sDocuments/hiwi/funkeybox/00_documentation/2019-xx_FunkeyBox_Paper/Text/" % home)
+main_tex_folder = (main_tex_file)
 os.chdir(main_tex_folder)
 
 print("[+] Starting to look for bibtex file")
